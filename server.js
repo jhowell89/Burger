@@ -25,9 +25,9 @@ app.listen(PORT, ()=>{
     console.log(`Connected on port: ${PORT}`);
 });
 
-// app.get("/", function(req, res) {
-//     res.sendFile(path.join(__dirname, "main.handlebars"));
-//   });
-//   app.get("/", function(req, res) {
-//     res.sendFile(path.join(__dirname, "index.handlebars"));
-//   });
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "main.handlebars"));
+  });
+  app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "index.handlebars"));
+  });
